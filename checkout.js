@@ -1,4 +1,5 @@
-
+//NOT YET IMPLEMENTED
+//Will be implemented by Assignment 6B
 (function() {
     const selectedItemsContainer = document.querySelector('#selected-items');
     const cart = localStorage.getItem('cart');
