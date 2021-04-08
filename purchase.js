@@ -55,13 +55,7 @@
     addToCart.addEventListener('click', function() {
         if(selectedSizeBox && selectedColorBox) {
           let product = "|" + selectedProduct + ", " + selectedSize + ", " + selectedColor;
-          if(addToCart.innerHTML == 'Added') {
-            cart = cart.replace(product,'');
-            addToCart.innerHTML = 'Add to Cart';
-          } else {
-            cart += product; 
-            addToCart.innerHTML = 'Added';
-          }
+          cart += product; 
           localStorage.setItem('cart',cart);
 
           //Show cart size

@@ -1,3 +1,6 @@
-//For debugging purposes 
-//Going to the homepage will always reset the cart
-localStorage.setItem('cart', '');
+//Unlike 6A, going to homepage no longer clears the cart
+(function() {
+    if(!localStorage.getItem('cart')) {
+        localStorage.setItem('cart', '');
+    }
+}());
