@@ -2,8 +2,10 @@
 //Will be implemented by Assignment 6B
 (function() {
     const selectedItemsContainer = document.querySelector('#selected-items');
-    const cart = localStorage.getItem('cart');
-    for(var i=0; i<cart.length; i++) {
-      selectedItemsContainer.insertAdjacentHTML('beforeend', `<div class="cart-item"> ${cart[i].name} (${cart[i].size}, ${cart[i].color}) [Price]</div>`);
+    const cart = localStorage.getItem('cart').split('|');
+    for(var i=1; i<cart.length; i++) {
+      cart[i] = cart[i].replace('_',' ')
+      let newEntry = `<div class="cart-item"> ${cart[i]} <button class="remove">X</button></div>`
+      selectedItemsContainer.insertAdjacentHTML('beforeend', newEntry);
     }
 }());

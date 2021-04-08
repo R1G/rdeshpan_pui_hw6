@@ -1,10 +1,11 @@
 html {
-    background-image: url("background.png");
+    background-image: url("Images/background.png");
     background-size: cover;
     background-color: aqua;
     background-repeat: no-repeat;
     background-position: bottom;
     height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Logo Styling */
@@ -54,8 +55,7 @@ a {
     display: grid;
     grid-template-columns: 50% 15% 15% 425px;
     grid-template-rows: 800px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+}
 .column {
     background-color: lightblue;
     color: black;
@@ -159,6 +159,12 @@ button:hover {
     padding: 1%;
     color: green;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.remove {
+    float: right;
+    background-color: red;
+    color: white;
 }
   
 
